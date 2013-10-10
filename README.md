@@ -18,7 +18,7 @@ From the command line:
 Run
 ---
 
-From the command line:
+From the command line in the ``zf2-tutorial-to-go`` directory:
 
     $ php -S 0.0.0.0:8080 -t public
 
