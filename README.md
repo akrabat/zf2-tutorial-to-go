@@ -20,7 +20,7 @@ Run
 
 From the command line in the ``zf2-tutorial-to-go`` directory:
 
-    $ php -S 0.0.0.0:8080 -t public
+    $ php -S 0.0.0.0:8080 -t public public/index.php
 
 Now open http://localhost:8080 in your browser
 
