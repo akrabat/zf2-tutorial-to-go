@@ -10,6 +10,14 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
     return false;
 }
 
+// Some simple ZF2 Tutorial To Go initialisation:
+if (!file_exists('data/album.sqlite')) {
+    copy('data/album.sqlite.dist', 'data/album.sqlite');
+}
+if (!file_exists('config/autoload/local.php')) {
+    copy('config/autoload/local.php.dist', 'config/autoload/local.php');
+}
+
 // Setup autoloading
 require 'init_autoloader.php';
 
